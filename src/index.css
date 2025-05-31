@@ -10,6 +10,7 @@
   min-height: 100vh;
   background: #16002e;
   transition: 0.5s;
+  color: white ;
 }
 
 .container.light{
