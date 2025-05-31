@@ -1,0 +1,13 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+ <title>jake_logo</title>
+
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#ffffff" ry="143.49999" rx="137.99999" id="svg_6" cy="323.29993" cx="162.39997" stroke-width="40" fill="none"/>
+  <line stroke="#ffffff" id="svg_8" y2="310.79999" x2="301" y1="14.8" x1="301.39999" stroke-width="40" fill="none"/>
+  <line transform="rotate(90 172.2 324.8)" stroke="#ffffff" id="svg_9" y2="459.79999" x2="172.00008" y1="189.79998" x1="172.40006" stroke-width="40" fill="none"/>
+  <line transform="rotate(50 385.2 253.8)" stroke="#ffffff" id="svg_10" y2="354.79996" x2="384.99998" y1="152.79995" x1="385.39997" stroke-width="40" fill="none"/>
+  <line transform="rotate(-50 393.2 401.8)" stroke="#ffffff" id="svg_11" y2="502.79996" x2="392.99998" y1="300.79995" x1="393.39997" stroke-width="40" fill="none"/>
+  <line transform="rotate(90 301.2 63.8)" stroke="#ffffff" id="svg_12" y2="198.79999" x2="301.00008" y1="-71.20002" x1="301.40006" stroke-width="97" fill="none"/>
+ </g>
+</svg>
