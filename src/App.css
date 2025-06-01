@@ -233,7 +233,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 150px 0 100px 0;
   background-image: url('./assets/img/banner-bg.jpg');
   background-position: top center;
   background-size: cover;
@@ -316,6 +316,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
 }
+
 .skill p {
     color: #B8B8B8;
     font-size: 18px;
@@ -324,20 +325,141 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin: 14px 0 75px 0;
 }
 .skill-slider {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   position: relative;
 }
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
-}
+
 .background-image-left {
   top: 28%;
   position: absolute;
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+
+/*coppied from project css*/
+.skill-imgbx {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin:0;
+  width: 200%;
+  padding: 0;
+}
+.skill-imgbx img{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.skill Col {
+  width: 20px;
+  border-radius: 10px;
+  opacity: 0;
+}
+.skill-imgbx::before {
+  content: "";
+  background: linear-gradient(90.21deg, #2b8054 -5.91%, #083b32 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.skill-imgbx:hover::before {
+  height: 100%;
+}
+.skill-txtx {
+  position: absolute;
+  text-align: center;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+  width: 100%;
+}
+.skill-imgbx:hover .skill-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.skill-imgbx .botTitle {
+  opacity: 0;
+  margin-bottom: 20px;
+}
+.skill-imgbx .skillDesc {
+  opacity: 0;
+}
+.skill-imgbx:hover .skillDesc {
+  opacity: 1;
+}
+
+.skill-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.skill-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.tabs button {
+  flex: 1;
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  letter-spacing: 0.8px;
+  z-index: 0;
+  text-align: center;
+}
+
+.tabs button::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #045f4e, #03332e);
+  z-index: -1;
+  transition: width 0.3s ease-in-out;
+}
+
+.tabs button:hover::before {
+  width: 100%;
+  background: linear-gradient(90deg, #039a7e20, #03332e21);
+}
+
+.tabs button:hover {
+  color: #fff;
+  filter: brightness(1.1);
+}
+
+.tabs button.active::before {
+  width: 100%;
+}
+
+.tabs button.active {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: #fff;
 }
 
 /************ Projects Css ************/
@@ -466,7 +588,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
@@ -616,3 +738,5 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+
