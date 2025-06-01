@@ -51,7 +51,7 @@ export const skill_programming = [
 export const skill_engineering = [
     {
       title: "Arduino",
-      description: "Basics",
+      description: "Various IoT sensors actuators",
       imgUrl: "https://images.icon-icons.com/159/PNG/256/arduino_22429.png",
     },
     {
@@ -66,7 +66,7 @@ export const skill_engineering = [
     },
     {
       title: "3D Modeling",
-      description: "Macros",
+      description: "Equipment parts",
       imgUrl: "https://cdn-icons-png.flaticon.com/128/3169/3169330.png",
     },
     {

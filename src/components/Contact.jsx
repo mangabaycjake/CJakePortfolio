@@ -53,12 +53,19 @@ export const Contact = () => {
                 <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
               }
             </TrackVisibility>
+            <div className="contact-catalog">
+              <h3>Reach me out</h3>
+              <img src={"https://img.icons8.com/fluent-systems-regular/512/FFFFFF/gmail.png"} alt="icon" />
+              <h5>mangabaychristianjake@gmail.com</h5>
+              <img src={"https://img.icons8.com/ios_filled/512/FFFFFF/apple-phone.png"} alt="icon" />    
+              <h5>+63-956-284-8077</h5>
+            </div>
           </Col>
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Get In Touch</h2>
+                <h2>Leave me a comment</h2>
                 <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">

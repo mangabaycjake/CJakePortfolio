@@ -7,7 +7,7 @@ export const SkillCard = ({ title, description, imgUrl }) => {
         <div className="skill-imgbx">
           <img src={imgUrl} />
           <div className="skill-txtx">
-            <h4>{title}</h4>
+            <h4 className="topTitle">{title}</h4>
             <span className="skillDesc">{description}</span>
           </div>
           <div>

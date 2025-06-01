@@ -4,6 +4,7 @@ import headerImg from "../assets/img/header-img.svg"
 import { ArrowRightCircle } from 'react-bootstrap-icons'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen'
+import resume from '../assets/Mangabay - Embedded Software Engineer (2).pdf';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0)
@@ -46,6 +47,10 @@ export const Banner = () => {
       setIndex(prevIndex => prevIndex + 1)
     }
   }
+  
+  const [showMore, setShowMore] = useState(false)
+  const longText = ["Although my degree is Electrical Engineering, ",
+    "I pursued my passion in programming and IoT projects as I majored in Computer Engineering."]
 
   return (
     <section className="banner" id="home">
@@ -59,7 +64,17 @@ export const Banner = () => {
                 <h1>{`Hi! I'm Jake`} </h1>
                  <h2><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Embedded Software Engineer", "Registered Electrical Engineer"]'><span className="wrap">{text}</span></span></h2>
                   <p>Specializing in the development of automated systems through the integration of programming, instrumentation, and engineering. Passionate, willing to learn, and always seeking improvements. </p>
-                  <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>
+                  <p>
+                    {showMore ? longText : longText.slice(0, 0)}
+                    <span
+                      onClick={() => setShowMore(!showMore)}
+                      style={{ color: "gray", cursor: "pointer", marginLeft: "6px" }}
+                    >
+                      {showMore ? "Show less about me." : "Show more about me."}
+                    </span>
+                  </p>
+                  <button className="resume-button" onClick={() => window.open(resume)}>View Resume</button>
+                  {/*<button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>*/}
               </div>}
             </TrackVisibility>
           </Col>

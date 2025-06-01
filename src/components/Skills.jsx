@@ -5,7 +5,7 @@ import arrow2 from "../assets/img/arrow2.svg"
 import colorSharp from "../assets/img/color-sharp.png"
 
 import { SkillCard } from "./SkillCard";
-import React, { useState } from "react";
+import { useState } from "react";
 import { skill_programming, skill_software, skill_other, skill_engineering } from "./SkillSet"
 
 export const Skills = () => {
@@ -18,11 +18,11 @@ export const Skills = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 5
+      items: 7
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3
+      items: 2
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -40,6 +40,7 @@ export const Skills = () => {
       autoPlay={true}
       arrows={true}
       ssr={true}
+      centerMode={true}
       className="skill-slider"
     >
       {skills.map((skill, index) => (
@@ -47,7 +48,7 @@ export const Skills = () => {
       ))}
     </Carousel>
   );
-};
+  };
   
   return (
     <section className="skill" id="skills">
@@ -56,8 +57,11 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                       <h2>Skills</h2>
-                      <p>My skills revolve around creativity, problem solving and technicalities.</p>
+                      <p>My skills revolve around creativity, problem solving and technicalities. 
+                        These are the tools I have worked around.
+                      </p>
                         <div>
+
                           <div className="tabs">
                             <button className={activeTab === "programming" ? "active" : ""} onClick={() => setActiveTab("programming")}>
                               Programming
