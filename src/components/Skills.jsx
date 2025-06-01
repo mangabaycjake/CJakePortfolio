@@ -26,7 +26,7 @@ export const Skills = () => {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 2
+      items: 1
     }
   }
 
@@ -36,8 +36,8 @@ export const Skills = () => {
   return (
     <Carousel
       responsive={responsive}
-      infinite={true}
-      autoPlay={false}
+      infinite={false}
+      autoPlay={true}
       arrows={true}
       ssr={true}
       className="skill-slider"

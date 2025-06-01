@@ -304,9 +304,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background-color: #03332e;
 }
 .skill-bx {
-  background: #151515;
+  background: #151515b0;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -336,6 +337,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+  opacity: 0  ;
 }
 
 /*coppied from project css*/
@@ -351,6 +353,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
+  opacity: 100%;
 }
 .skill Col {
   width: 20px;
@@ -360,7 +363,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #2b8054 -5.91%, #083b32 111.58%);
-  opacity: 0.85;
+  opacity: 90%;
   position: absolute;
   width: 100%;
   height: 0;
@@ -395,7 +398,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill-txtx h4 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
@@ -409,7 +412,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .tabs {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   border-radius: 50px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.1);
