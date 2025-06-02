@@ -43,7 +43,7 @@ export const projects_1 = [
     {
       title: "Arduino Bluetooth Buzzers",
       description: "with a Windows app for OBS Studio, and control score, timers, and more features",
-      imgUrl: "https://i.ytimg.com/vi/YSbgvUDJI08/hq720.jpg",
+      imgUrl: "https://p.kindpng.com/picc/s/3-32809_parallel-hd-png-download.png",
       visitUrl: "#"
     },
     

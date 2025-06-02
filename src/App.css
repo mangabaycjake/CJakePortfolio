@@ -403,14 +403,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
-  opacity: 100%;
+  opacity: 90%;
   transform: scale(0.8);
   z-index: -1;
 
 }
 .skill-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #2b8054 -5.91%, #083b32 111.58%);
+  background: linear-gradient(150deg, #0c855a -5.91%, #083b32 111.58%);
   opacity: 90%;
   position: absolute;
   width: 100%;
@@ -469,7 +469,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 50px;
   border-radius: 50px;
   overflow:auto;
-  background: rgba(255, 255, 255, 0.1);
+  border: #666 2px solid;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -832,7 +832,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact-email, .contact-num {
   color: white;
-  font-size: 20px;
   margin-left: 10px;
   font-family: 'Arial', sans-serif;
   letter-spacing: 0.5px;
