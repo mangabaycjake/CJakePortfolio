@@ -1,4 +1,4 @@
-
+import icon_electrical from "../assets/img/icon-electrical.png"
 
 export const skill_programming = [
     {
@@ -34,7 +34,7 @@ export const skill_programming = [
     {
       title: "VB",
       description: "Winforms with .NET",
-      imgUrl: "https://cdn-icons-png.flaticon.com/128/28/28908.png",
+      imgUrl: "https://magoarcade.org/wp-content/uploads/2021/01/vbnetlogo-603x381.png",
     },  
     {
       title: "VHDL",
@@ -67,12 +67,12 @@ export const skill_engineering = [
     {
       title: "3D Modeling",
       description: "Equipment parts",
-      imgUrl: "https://cdn-icons-png.flaticon.com/128/3169/3169330.png",
+      imgUrl: "https://cdn-icons-png.flaticon.com/512/5581/5581955.png",
     },
     {
       title: "Electrical Plan",
       description: "Floor plan layout",
-      imgUrl: "https://cdn-icons-png.flaticon.com/128/270/270997.png",
+      imgUrl: icon_electrical,
     },
     {
       title: "Documentation",
@@ -93,9 +93,14 @@ export const skill_software = [
       imgUrl: "https://images.icon-icons.com/2107/PNG/96/file_type_matlab_icon_130398.png",
     },
     {
+      title: "AWS",
+      description: "EC2 and General knowledge",
+      imgUrl: "https://karl.kranich.org/wp-content/uploads/2016/09/ec2-icon.png",
+    },
+    {
       title: "Unity",
       description: "Modeling and motion",
-      imgUrl: "https://images.icon-icons.com/2389/PNG/96/unity_logo_icon_144772.png",
+      imgUrl: "https://img.icons8.com/ios_filled/200/FFFFFF/unity.png",
     },
     {
       title: "MS Excel",
@@ -151,13 +156,8 @@ export const skill_other = [
       imgUrl: "https://cdn-icons-png.flaticon.com/128/6159/6159679.png",
     },
     {
-      title: "Time Management",
-      description: "",
-      imgUrl: "https://cdn-icons-png.flaticon.com/128/8948/8948006.png",
-    },
-    {
       title: "Research",
       description: "Study",
-      imgUrl: "https://cdn-icons-png.flaticon.com/128/2717/2717575.png",
+      imgUrl: "https://www.nicepng.com/png/full/866-8660779_fast-professional-analyses-research-and-development-icon-white.png",
     },
   ];

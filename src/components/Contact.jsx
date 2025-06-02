@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import imgProfile from "../assets/img/img-Profile.jpg"
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -48,17 +49,25 @@ export const Contact = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
-            <TrackVisibility>
+            <div>
+              <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
+                <img className={isVisible ? "animate__animated animate__zoomIn cont-design" : "cont-design"} src={contactImg} alt="Contact Us" id="img-profile"/>
               }
             </TrackVisibility>
-            <div className="contact-catalog">
-              <h3>Reach me out</h3>
-              <img src={"https://img.icons8.com/fluent-systems-regular/512/FFFFFF/gmail.png"} alt="icon" />
-              <h5>mangabaychristianjake@gmail.com</h5>
-              <img src={"https://img.icons8.com/ios_filled/512/FFFFFF/apple-phone.png"} alt="icon" />    
-              <h5>+63-956-284-8077</h5>
+            </div>
+            <div className="animate__animated animate__zoomIn contact-catalog">
+              <img className="profile-image" src={imgProfile}></img>
+              <br/>
+              <h3>Christian Jake Mangabay</h3>
+              <Col>
+                <img src={"https://img.icons8.com/fluent-systems-regular/512/FFFFFF/gmail.png"} alt="icon" />
+                <span className="contact-email">mangabaychristianjake@gmail.com</span>
+              </Col>
+              <Col>
+                <img src={"https://img.icons8.com/ios_filled/512/FFFFFF/apple-phone.png"} alt="icon" />    
+                <span className="contact-num">+63-956-284-8077</span>
+              </Col>
             </div>
           </Col>
           <Col size={12} md={6}>

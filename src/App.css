@@ -233,7 +233,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 150px 0 100px 0;
+  padding: 200px 0 100px 0;
   background-image: url('./assets/img/banner-bg.jpg');
   background-position: top center;
   background-size: cover;
@@ -243,11 +243,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(28, 137, 95, 0.5) -5.91%, rgba(6, 44, 47, 0.5) 111.58%);
+  /*background: linear-gradient(90.21deg, rgba(28, 137, 95, 0.5) -5.91%, rgba(6, 44, 47, 0.5) 111.58%);*/
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+  opacity: 0;
 }
 .banner h1 {
   font-size: 65px;
@@ -306,7 +307,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 2px solid rgba(255, 255, 255, 0.518); /* crisp white border */
   padding: 10px 24px;
   font-size: 16px;
-  font-weight: 100;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -314,14 +314,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .resume-button:hover {
-  background-color: #3EB489; /* mint green on hover */
-  color: #2d7c7ca5; /* dark text on hover */
+  background-color: #2d7c7ca5; /* mint green on hover */
   border-color: white;
 }
 
 .resume-button:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(62, 180, 137, 0.5);
+}
+.banner iframe {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+}
+.video-back{
+  display: flex;
+  justify-content: center;
+   position: relative;
+   /*background-color:#03332e;*/
+   padding: 2px;
 }
 
 
@@ -384,6 +395,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-right: auto;
   width: 100px;
   padding: 0;
+  background-color: #3131314d;
+  height: 22vh;
 
 }
 .skill-imgbx img{
@@ -391,6 +404,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0;
   margin-bottom: 10px;
   opacity: 100%;
+  transform: scale(0.8);
+  z-index: -1;
+
 }
 .skill-imgbx::before {
   content: "";
@@ -403,6 +419,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill-imgbx:hover::before {
   height: 100%;
+  z-index: 1;
 }
 .skill-txtx {
   position: absolute;
@@ -413,6 +430,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 1;
   width: 100%;
+  z-index: 2;
 }
 .skill-imgbx:hover .skill-txtx {
   top: 50%;
@@ -479,14 +497,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(90deg, #045f4e, #03332e);
+  background: linear-gradient(90deg, #039a7e20, #07615821);
   z-index: -1;
   transition: width 0.3s ease-in-out;
 }
 
 .tabs button:hover::before {
   width: 100%;
-  background: linear-gradient(90deg, #039a7e20, #03332e21);
+  background: linear-gradient(90deg, #039a7e20, #07615821);
 }
 
 .tabs button:hover {
@@ -500,7 +518,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .tabs button.active {
   color: #fff;
-  background: linear-gradient(90deg, #045f4e, #03332e);
+  background: linear-gradient(90deg, #045f4e, #066560);
 }
 
 .tab-scroll-container {
@@ -639,7 +657,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project-tabs button.active {
   color: #fff;
-  background: linear-gradient(90deg, #045f4e, #03332e);
+  background: linear-gradient(90deg, #045f4e, #066560);
 }
 
 .project-tab-scroll-container {
@@ -795,7 +813,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .contact-catalog{
-  border: 1px;
+  border: 1px solid white;
   border-radius: 10px;
   padding: 15px;
   background: transparent;
@@ -811,6 +829,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact-catalog img{
   width: 30px;;
 }
+
+.contact-email, .contact-num {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.profile-image {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  border: 2px solid #ccc;
+  margin: 0 auto;
+}
+
+.profile-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  display: block;
+}
+
+.contact .cont-design{
+  height:0;
+}
+
+
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;

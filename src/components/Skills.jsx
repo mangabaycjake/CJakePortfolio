@@ -30,7 +30,7 @@ export const Skills = () => {
     }
   }
 
-  const [activeTab, setActiveTab] = useState("programming");
+  const [activeTab, setActiveTab] = useState("engineering");
 
   const SkillCarousel = ({ skills, responsive }) => {
   return (

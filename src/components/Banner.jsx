@@ -49,8 +49,9 @@ export const Banner = () => {
   }
   
   const [showMore, setShowMore] = useState(false)
-  const longText = ["Although my degree is Electrical Engineering, ",
-    "I pursued my passion in programming and IoT projects as I majored in Computer Engineering."]
+  const longText = ["Although my degree is in Electrical Engineering, ",
+    "I pursued my passion for programming and IoT projects by focusing on Computer Engineering, ", 
+    "where I applied core engineering skills in practical where I applied core engineering concepts for practical solutions."]
 
   return (
     <section className="banner" id="home">
@@ -73,30 +74,25 @@ export const Banner = () => {
                       {showMore ? "Show less about me." : "Show more about me."}
                     </span>
                   </p>
-                  <button className="resume-button" onClick={() => window.open(resume)}>View Resume</button>
-                  {/*<button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>*/}
-              </div>}
+                  <Col>
+                    <button className="resume-button" onClick={() => window.open(resume)}>View Resume</button>
+                    {/*<button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>*/}
+                  </Col>
+                  </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div style={{ position: "relative", paddingBottom: "85%", height: 0 }}>
+                <div className="video-back">
                 <iframe
                     src="https://www.youtube.com/embed/M5F6JIFi0Y0?si=Iqyc6fc0xDiP8B86?autoplay=1"
                     title="YouTube video"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    }}
                 />
                 </div>
-                }
+              }
             </TrackVisibility>
           </Col>
         </Row>
