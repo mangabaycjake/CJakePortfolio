@@ -69,11 +69,8 @@ export const Skills = () => {
                             <button className={activeTab === "engineering" ? "active" : ""} onClick={() => setActiveTab("engineering")}>
                               Engineering
                             </button>
-                            <button className={activeTab === "software" ? "active" : ""} onClick={() => setActiveTab("software")}>
-                              Software
-                            </button>
                             <button className={activeTab === "other" ? "active" : ""} onClick={() => setActiveTab("other")} >
-                              Other
+                              Soft Skills
                             </button>
                           </div>
                           
