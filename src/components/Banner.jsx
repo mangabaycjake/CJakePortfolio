@@ -4,7 +4,7 @@ import headerImg from "../assets/img/header-img.svg"
 import { ArrowRightCircle } from 'react-bootstrap-icons'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen'
-import resume from '../assets/Mangabay - Embedded Software Engineer (2).pdf';
+import resume from '../assets/Mangabay - CV.pdf';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0)
